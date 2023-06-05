@@ -1,3 +1,9 @@
-import { RouterModule, Routes } from "@angular/router";
+import { RouterModule } from "@angular/router";
+import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
-const appRoutes = [{ path: "", component: MenuComponent, pathMatch: "full" }];
+import { PagoComponent } from "./pago/pago.component";
+const appRoutes = [
+    { path: "menu", component: MenuComponent },
+    { path: "pago", component: PagoComponent },
+  ];
+export const routing = RouterModule.forRoot(appRoutes);
